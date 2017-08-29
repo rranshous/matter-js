@@ -4388,6 +4388,7 @@ module.exports = Common;
      * @return {boolean} True if the object is a HTMLElement, otherwise false
      */
     Common.isElement = function(obj) {
+      return false;
         return obj instanceof HTMLElement;
     };
 
