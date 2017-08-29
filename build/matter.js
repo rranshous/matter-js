@@ -5042,11 +5042,11 @@ var Body = _dereq_('../body/Body');
         if ((gravity.x === 0 && gravity.y === 0) || gravityScale === 0) {
             return;
         }
-        
+
         for (var i = 0; i < bodies.length; i++) {
             var body = bodies[i];
 
-            if (body.isStatic || body.isSleeping)
+            if (body.isStatic || body.isSleeping || body.antiGravity)
                 continue;
 
             // apply gravity
